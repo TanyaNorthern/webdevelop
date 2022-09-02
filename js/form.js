@@ -7,11 +7,13 @@ const formSelector = document.getElementById('formselector')
 const datecalcFormIdx = 0;
 const forms = [document.getElementById('datecalc'), document.getElementById('timer')];
 const results = [document.getElementById('datecalc__result'), document.getElementById('timer__result')];
-
 const timerInput = document.getElementById('remainingTime')
 
-formSelector.onchange = () => {
+formSelector.onchange = (event) => {
+    event.preventDefault()
     switchForms(forms, formSelector.selectedIndex)
+
+    console.log('form switched')
 }
 
 forms[datecalcFormIdx].onsubmit = (event) => {

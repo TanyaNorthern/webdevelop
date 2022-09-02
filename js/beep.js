@@ -1,5 +1,9 @@
-var sound = new Howl({
-    src: ['../audio/sound_12020.wav']
-});
+import { Howl, Howler} from 'howler'
 
-export default function beep() { sound.play(); }
+const sound = new Howl({
+    scr: ['../audio/sound_12020.wav']
+})
+
+export default function beep() {
+    sound.play()
+}

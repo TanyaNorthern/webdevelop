@@ -1,0 +1,31 @@
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/main.scss ***!
+  \***********************************************************************************************************/
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  background-color: #ccc;
+}
+.main h3 {
+  color: #333;
+}
+.main p {
+  color: green;
+}
+.main__title {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #333;
+}
+.main__text {
+  font-size: 20px;
+  font-weight: bold;
+}

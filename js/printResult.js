@@ -1,7 +1,11 @@
-export const printError = (result, textErr) => {
-    result.innerText = textErr
+const result = document.getElementById('datecalc__result');
+
+export const printError = (errorText) => {
+  result.innerText = errorText;
 }
 
-export const printResult = (result, { years, months, days }) => {
-    result.innerText = `Год: ${years} - Месяц: ${months} - День: ${days}`
+export const printResult = ({years, months, days}) => {
+  result.innerHTML = `Год: ${years} - Месяц: ${months} - День: ${days}`;
 }
+
+console.log('test');
